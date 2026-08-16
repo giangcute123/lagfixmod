@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "lagfix",
+  "version": "${version}",
+  "name": "Lag Fix",
+  "description": "Giảm lag server bằng cách hạn chế tick AI của mob ở xa người chơi.",
+  "authors": ["Bạn"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.lagfix.LagFixMod"]
+  },
+  "mixins": ["lagfix.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
